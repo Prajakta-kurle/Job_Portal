@@ -1,12 +1,70 @@
-# React + Vite
+# Job Portal Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Job Portal is a React-based web application that allows users to search and explore jobs based on different categories such as job role, location, experience, and job type. The application includes filtering and search functionality with a responsive user interface.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+* Job search functionality
+* Category-wise job filtering
+* Filter jobs by location, experience, and job type
+* Responsive user interface
+* Dynamic job cards and listings
+* Firebase integration for data handling
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tech Stack
+
+### Frontend
+
+* React.js
+* JavaScript
+* HTML
+* CSS
+* Tailwind CSS
+
+### Backend & Database
+
+* Firebase
+
+---
+
+## Concepts Used
+
+* React Hooks
+* Component-based architecture
+* Search and filtering functionality
+* Responsive UI Design
+
+---
+
+## Project Setup
+
+Install dependencies:
+
+```bash id="t1j6kw"
+npm install
+```
+
+Run the project:
+
+```bash id="0a2k7m"
+npm run dev
+```
+
+---
+
+## Project Highlights
+
+* Created dynamic job listing cards using reusable components
+* Implemented category-based filtering and search functionality
+* Used Firebase for storing and managing job-related data
+* Designed responsive UI for desktop and mobile devices
+
+---
+
+## Author
+
+Prajakta Kurle
