@@ -85,24 +85,37 @@ function App() {
   };
 
   return (
-    <>
-      <Navbar />
-      <Header />
+  <>
+    <Navbar />
+    <Header />
+
+    <div className="px-4 sm:px-10 py-5 space-y-6 pb-4
+    0">
+      {/* Searchbar */}
       <Searchbar fetchJobscustom={fetchJobscustom} />
-      
+
+      {/* Clear Filter Button */}
       {customSearch && (
-        <button onClick={fetchAllJobs} className="flex pl-[1250px] mb-2">
-          <p className="bg-blue-600 text-white px-10 py-2 rounded-md">Clear filter</p>
-        </button>
+        <div className="flex justify-end">
+          <button onClick={fetchAllJobs} className="bg-blue-600 text-white px-6 py-2 rounded-md">
+            Clear filter
+          </button>
+        </div>
       )}
 
-      {jobs.length > 0 ? (
-        jobs.map((job) => <JobCard key={job.id} {...job} />)
-      ) : (
-        <p className='text-center mt-4'>No Job Postings available</p>
-      )}
-    </>
-  );
+      {/* Job Listings */}
+      <div className="space-y-6">
+        {jobs.length > 0 ? (
+          jobs.map((job) => <JobCard key={job.id} {...job} />)
+        ) : (
+          <p className="text-center text-gray-500">No Job Postings available</p>
+        )}
+      </div>
+    </div>
+
+    <div className="pb-20" />
+  </>
+);
 }
 
 export default App;
