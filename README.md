@@ -64,6 +64,8 @@ npm run dev
 * Designed responsive UI for desktop and mobile devices
 
 ---
+## Live Link
+https://job-portal-flax-one.vercel.app/
 
 ## Author
 
